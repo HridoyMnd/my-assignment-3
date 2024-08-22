@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>my-assignment-3</title>
         <!-- google font cnd link -->
-
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
         <!-- font awesome cdn link -->
         <script src="https://kit.fontawesome.com/4c236feb5b.js" crossorigin="anonymous"></script>
         <!-- tailwind css and daisyUI cdn links -->
@@ -18,17 +20,66 @@
               theme: {
                 extend: {
                   colors: {
-                    clifford: '#da373d',
+                    headingColor :'rgb(33, 33, 33)',
+                    para1:'rgb(73, 73, 73)',
+                    para2:'rgb(115, 115, 115)'
+                  },
+                  fontFamily: {
+                    'body-font': 'Manrope'
                   }
+                  
                 }
               }
             }
           </script>
           <!-- tailwind css config code end -->
     </head>
-    <body>
+    <body class="font-body-font">
       <!-- header section markup start -->
-       <header>
+       <header class="bg-slate-50">
+        <!-- navbar section markup start -->
+         <section class="navbar-section container mx-auto"> 
+          <div class="navbar">
+            <div class="navbar-start">
+             <div class="logo flex justify-center items-center gap-1 hover:cursor-pointer">
+              <i class="fa-solid fa-arrow-right bg-lime-300 h-7 w-7 flex items-center justify-center rounded-full -rotate-45"></i>
+              <a class="text-3xl text-headingColor font-extrabold leading-10">Rinterio</a>
+             </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-para1 text-base font-extrabold leading-5"><a>Home</a></li>
+                <li class="text-para2 text-base font-normal leading-5"><a>Services</a></li>
+                <li class="text-para2 text-base font-normal leading-5"><a>Portfolio</a></li>
+                <li class="text-para2 text-base font-normal leading-5"><a>Blogs</a></li>
+                <li class="text-para2 text-base font-normal leading-5"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <i class=" fa-solid fa-magnifying-glass text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9 mr-3 items-center justify-center flex hover:cursor-pointer" ></i>
+              <i class=" fa-solid fa-cart-shopping text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9  mr-3 items-center justify-center flex hover:cursor-pointer" ></i>
+                <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300">
+                  <button>Book Consult</button> 
+                  <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                </a>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         </section>
+        <!-- navbar section markup end -->
        </header>
       <!-- header section markup end -->
        <!-- main section markup start -->
@@ -42,8 +93,8 @@
 
 
         <!-- github repository link -->
-         <a href="https://github.com/HridoyMnd/my-assignment-3"><button class="btn"> git repo link</button></a>
+         <!-- <a href="https://github.com/HridoyMnd/my-assignment-3"><button class="btn"> git repo link</button></a> -->
          <!-- github live server link -->
-          <a href="https://hridoymnd.github.io/my-assignment-3/"><button class="btn"> live server link</button></a>
+          <!-- <a href="https://hridoymnd.github.io/my-assignment-3/"><button class="btn"> live server link</button></a> -->
     </body>
 </html>
