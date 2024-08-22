@@ -36,9 +36,9 @@
     </head>
     <body class="font-body-font">
       <!-- header section markup start -->
-       <header class="bg-slate-50">
+       <header class="container mx-auto mb-20">
         <!-- navbar section markup start -->
-         <section class="navbar-section container mx-auto"> 
+         <section class="navbar-section bg-slate-50"> 
           <div class="navbar">
             <div class="navbar-start">
              <div class="logo flex justify-center items-center gap-1 hover:cursor-pointer">
@@ -49,22 +49,22 @@
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
                 <li class="text-para1 text-base font-extrabold leading-5"><a>Home</a></li>
-                <li class="text-para2 text-base font-normal leading-5"><a>Services</a></li>
-                <li class="text-para2 text-base font-normal leading-5"><a>Portfolio</a></li>
-                <li class="text-para2 text-base font-normal leading-5"><a>Blogs</a></li>
-                <li class="text-para2 text-base font-normal leading-5"><a>Contact Us</a></li>
+                <li class="text-para2 text-base font-normal leading-5 hover:text-para1"><a>Services</a></li>
+                <li class="text-para2 text-base font-normal leading-5 hover:text-para1"><a>Portfolio</a></li>
+                <li class="text-para2 text-base font-normal leading-5 hover:text-para1"><a>Blogs</a></li>
+                <li class="text-para2 text-base font-normal leading-5 hover:text-para1"><a>Contact Us</a></li>
               </ul>
             </div>
             <div class="navbar-end">
-              <i class=" fa-solid fa-magnifying-glass text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9 mr-3 items-center justify-center flex hover:cursor-pointer" ></i>
-              <i class=" fa-solid fa-cart-shopping text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9  mr-3 items-center justify-center flex hover:cursor-pointer" ></i>
+              <i class=" fa-solid fa-magnifying-glass text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9 mr-3 items-center justify-center flex hover:cursor-pointer hover:text-para1" ></i>
+              <i class=" fa-solid fa-cart-shopping text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9  mr-3 items-center justify-center flex hover:cursor-pointer hover:text-para1" ></i>
                 <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300">
                   <button>Book Consult</button> 
                   <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
                 </a>
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <i class="fa-solid fa-bars"></i>
+                <div tabindex="0" role="button" class="btn lg:hidden">
+                  <i class="fa-solid fa-bars text-3xl"></i>
                 </div>
                 <ul
                   tabindex="0"
@@ -80,10 +80,64 @@
           </div>
          </section>
         <!-- navbar section markup end -->
+         <!-- banner section markup start -->
+          <section class="banner-section text-center">
+            <img class="mx-auto" src="assetes/images/banner.png" alt="">
+            <h1 class="text-6xl font-extrabold leading-[67px] text-headingColor px-16 my-6">A barn house of this design has a striking appearance</h1>
+            <p class="text-base font-medium leading-6 text-para1 px-44">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a class="items-center justify-center bg-lime-200 btn text-xl font-bold leading-6 rounded-3xl hover:bg-lime-300 border border-lime-400 text-headingColor mt-8">
+              <button>View Details</button> 
+              <i class="fa-solid fa-arrow-right text-black bg-lime-300 h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+            </a>
+          </section>
+         <!-- banner section markup end -->
        </header>
       <!-- header section markup end -->
        <!-- main section markup start -->
         <main>
+          <!-- about us section markup start -->
+           <section class="about-us flex bg-gray-100 p-40 gap-9 border" >
+            <div class="flex-1 relative">
+              <img src="assetes/images/Vector.png " class="absolute -top-12 -left-8" alt="">
+              <button class=" py-1 px-6 rounded-3xl text-base font-bold text-para1 bg-white ">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                Click Me
+              </button>
+              <h1 class="text-4xl font-bold leading-10 text-headingColor mb-6">We design thoughtful, liveable spaces</h1>
+              <p class="text-base font-medium leading-6 text-para1 mb-6">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                
+                <div class="bg-white shadow-lg rounded-lg mb-4">
+                  <div class="flex">
+                    <div class="">
+                      <img class="p-6" src="assetes/images/commercial.png" alt="Card Image">
+                    </div>
+                    <div class="p-4">
+                      <h1 class="text-gray-900 font-bold text-xl">Commercial</h1>
+                      <p class="text-base font-medium text-para2">The barn house captivates with its blend<br> of rustic charm and modern.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg">
+                  <div class="flex">
+                    <div class="">
+                      <img class="p-6" src="assetes/images/residential.png" alt="Card Image">
+                    </div>
+                    <div class="p-4">
+                      <h1 class="text-gray-900 font-bold text-xl">Residential</h1>
+                      <p class="text-base font-medium text-para2">The barn house captivates with its blend<br> of rustic charm and modern.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            <div class="flex-1">
+              <img src="assetes/images/Rectangle.png " class="mb-0" alt="">
+            </div>
+           </section>
+           
+          <!-- about us section markup end -->
         </main>
        <!-- main section markup end -->
         <!-- footer section markup start -->
