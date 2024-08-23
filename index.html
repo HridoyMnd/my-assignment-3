@@ -26,6 +26,9 @@
                   },
                   fontFamily: {
                     'body-font': 'Manrope'
+                  },
+                  discussBack:{
+                    'back':"url('assetes/images/banner.png')"
                   }
                   
                 }
@@ -99,9 +102,9 @@
            <section class="about-us flex justify-between items-center bg-gray-100 px-12 py-30 gap-9" >
             <div class="flex-1 relative">
               <img src="assetes/images/Vector.png " class="absolute -top-12 -left-8" alt="">
-              <button class=" py-1 px-6 rounded-3xl text-base font-bold text-para1 bg-white ">
+              <button class=" py-1 px-6 rounded-3xl text-base font-bold text-para1 bg-white hover:bg-lime-100 transition duration-300 ease-in-out">
                 <i class="fa-solid fa-arrow-right mr-2"></i>
-                Click Me
+                About Us
               </button>
               <h1 class="text-4xl font-bold leading-10 text-headingColor mb-6">We design thoughtful, liveable spaces</h1>
               <p class="text-base font-medium leading-6 text-para1 mb-6">The barn house captivates with its blend of rustic charm and 
@@ -136,10 +139,40 @@
               <img src="assetes/images/Rectangle.png " class="mb-0" alt="">
             </div>
            </section>
+             <!-- member section markup start -->
+             <section class="member-section bg-gray-100 py-16 mt-0">
+                        <div class="member-content  grid grid-cols-4 bg-white w-11/12 mx-auto px-10 py-6 rounded-xl ">
+                          <div class="client-feedback text-center">
+                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
+                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                          </div>
+                          <div class="client-feedback text-center">
+                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
+                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                          </div>
+                          <div class="client-feedback text-center">
+                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
+                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                          </div>
+                          <div class="client-feedback text-center">
+                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
+                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                          </div>
+                        </div>
+              </section>
+             <!-- member section markup  end -->
           <!-- about us section markup end -->
            <!-- process section markup start -->
-           <section class="process-section bg-gray-50 my-24">
+           <section class="process-section bg-gray-100 my-0 ">
             <div class="process-title text-center">
+              <button class=" py-1 px-6 gap-2 bg-white rounded-3xl mb-3 hover:bg-lime-300 transition duration-300 ease-in-out">
+                <i class="fa-solid fa-arrow-right mr-3"></i>
+                How we works
+              </button>
               <h1 class="text-4xl font-bold text-headingColor">Our Works Process</h1>
               <p class="text-base font-medium text-prar1 my-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
             </div>
@@ -177,8 +210,12 @@
            </section>
            <!-- process section markup end -->
             <!-- article and news section markup start -->
-             <section class="article-section bg-gray-50">
+             <section class="article-section bg-gray-50 pt-16">
               <div class="article-title text-center">
+                <button class=" py-1 px-6 gap-2 bg-lime-100 rounded-3xl mb-3  text-base font-bold text-para1 hover:bg-lime-300 transition duration-300 ease-in-out">
+                  <i class="fa-solid fa-arrow-right mr-3"></i>
+                  Rinterio News
+                </button>
                 <h1 class="text-4xl font-bold text-headingColor">Read Our Articles and News</h1>
                 <p class="text-base font-medium text-para1 my-6">The barn house captivates with its blend of rustic charm and modern sophistication, 
                   <br> featuring weathered wood, sleek metal accents.</p>
@@ -245,17 +282,59 @@
               </div>
              </section>
             <!-- article and news section markup end -->
+             <!-- discuss section markup start -->
+              <section class="discuss-section bg-[url('assetes/images/bg.jpg')] bg-cover bg-center mt-16 pb-20">
+                <div class="discuss-title text-center pt-5">
+                  <button class=" py-1 px-6 gap-2 bg-lime-100 rounded-3xl mb-3 text-base font-bold text-para1 hover:bg-lime-300 transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-arrow-right mr-3"></i>
+                    Let’s Connect
+                  </button>
+                  <h1 class="text-4xl font-bold text-headignColor">Let’s Discuss Next Project</h1>
+                  <p class="text-base font-medium text-para1 py-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+                     featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="discuss-content grid grid-cols-2 px-40 gap-5">
+                  <input class="border px-6 py-3 rounded-3xl outline-none" type="text" placeholder="First Name*">
+                  <input class="border px-6 py-3 rounded-3xl outline-none" type="text" placeholder="Last Name*">
+                  <input class="border px-6 py-3 rounded-3xl outline-none" type="number" placeholder="Phone Number*">
+                  <input class="border px-6 py-3 rounded-3xl outline-none" type="email" placeholder="Email*">
+                  <textarea name="" id="" placeholder="Write your message here" rows="6" class="border col-span-2 rounded-3xl outline-none px-6 py-3 "></textarea>
+                  <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300 col-span-2 transition duration-300 ease-in-out">
+                    <button>Send Mail</button> 
+                    <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  </a>
+                </div>
+              </section>
+             <!-- discuss section markup end -->
         </main>
        <!-- main section markup end -->
         <!-- footer section markup start -->
-         <footer></footer>
+         <footer >
+          <section class="footer-container mx-auto text-center container bg-black py-24">
+            <button class=" py-1 font-bold text-white text-3xl flex gap-2 mx-auto mb-4 items-center justify-center">
+              <i class="fa-solid fa-arrow-right text-black bg-lime-300 h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+              Rinterio
+            </button>
+            <p class="text-base font-medium text-para2">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+            <div class="navbar-center my-6">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Home</a></li>
+                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Services</a></li>
+                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Portfolio</a></li>
+                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Blogs</a></li>
+                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300">
+              <button>Book Consult</button> 
+              <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+            </a>
+          </section>
+         </footer>
         <!-- footer section markup  end -->
-
-
-
         <!-- github repository link -->
-         <a href="https://github.com/HridoyMnd/my-assignment-3"><button class="btn"> git repo link</button></a>
+         <!-- <a href="https://github.com/HridoyMnd/my-assignment-3"><button class="btn"> git repo link</button></a> -->
          <!-- github live server link -->
-          <a href="https://hridoymnd.github.io/my-assignment-3/"><button class="btn"> live server link</button></a>
+          <!-- <a href="https://hridoymnd.github.io/my-assignment-3/"><button class="btn"> live server link</button></a> -->
     </body>
 </html>
