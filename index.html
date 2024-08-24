@@ -49,7 +49,7 @@
               <a class="text-3xl text-headingColor font-extrabold leading-10">Rinterio</a>
              </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center hidden lg:flex ">
               <ul class="menu menu-horizontal px-1">
                 <li class="text-para1 text-base font-extrabold leading-5"><a>Home</a></li>
                 <li class="text-para2 text-base font-normal leading-5 hover:text-para1"><a>Services</a></li>
@@ -59,9 +59,9 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <i class=" fa-solid fa-magnifying-glass text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9 mr-3 items-center justify-center flex hover:cursor-pointer hover:text-para1" ></i>
-              <i class=" fa-solid fa-cart-shopping text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9  mr-3 items-center justify-center flex hover:cursor-pointer hover:text-para1" ></i>
-                <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300">
+              <i class="fa-solid fa-magnifying-glass text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9 mr-3 items-center justify-center hidden lg:flex hover:cursor-pointer hover:text-para1" ></i>
+              <i class=" fa-solid fa-cart-shopping text-para2 bg-white rounded-full border text-lg p-5 h-9 w-9  mr-3 items-center justify-center hidden lg:flex hover:cursor-pointer hover:text-para1" ></i>
+                <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300 hidden lg:flex">
                   <button>Book Consult</button> 
                   <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
                 </a>
@@ -86,9 +86,9 @@
          <!-- banner section markup start -->
           <section class="banner-section text-center">
             <img class="mx-auto" src="assetes/images/banner.png" alt="">
-            <h1 class="text-6xl font-extrabold leading-[67px] text-headingColor px-16 my-6">A barn house of this design has a striking appearance</h1>
-            <p class="text-base font-medium leading-6 text-para1 px-44">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-            <a class="items-center justify-center bg-lime-200 btn text-xl font-bold leading-6 rounded-3xl hover:bg-lime-300 border border-lime-400 text-headingColor mt-8">
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-headingColor px-16 my-6">A barn house of this design has a striking appearance</h1>
+            <p class=" text-sm lg:text-base font-medium text-para1 px-2 lg:px-44">Our beautiful house is more than just a place to live—it's a sanctuary where memories are made, and comfort is always found. From the moment we step through the door, we’re welcomed by the warmth of spaces carefully designed to reflect who we are.</p>
+            <a class="items-center justify-center bg-lime-200 btn text-xl font-bold px-12 lg:px-4 rounded-3xl hover:bg-lime-300 border border-lime-400 text-headingColor mt-8">
               <button>View Details</button> 
               <i class="fa-solid fa-arrow-right text-black bg-lime-300 h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
             </a>
@@ -99,16 +99,19 @@
        <!-- main section markup start -->
         <main class="container mx-auto">
           <!-- about us section markup start -->
-           <section class="about-us flex justify-between items-center bg-gray-100 px-12 py-30 gap-9" >
-            <div class="flex-1 relative">
-              <img src="assetes/images/Vector.png " class="absolute -top-12 -left-8" alt="">
-              <button class=" py-1 px-6 rounded-3xl text-base font-bold text-para1 bg-white hover:bg-lime-100 transition duration-300 ease-in-out">
-                <i class="fa-solid fa-arrow-right mr-2"></i>
-                About Us
-              </button>
-              <h1 class="text-4xl font-bold leading-10 text-headingColor mb-6">We design thoughtful, liveable spaces</h1>
-              <p class="text-base font-medium leading-6 text-para1 mb-6">The barn house captivates with its blend of rustic charm and 
-                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+           <section class="about-us grid lg:grid-cols-2 grid-cols-1 justify-between items-center bg-gray-100 lg:pt-20 pt-4 px-14 gap-9" >
+            <div class="relative">
+              <!-- about title markup start -->
+               <section class="about-title lg:text-left text-center">
+                <img src="assetes/images/Vector.png " class="absolute -top-12 -left-8 hidden lg:flex" alt="">
+                <button class=" py-1 px-6 rounded-3xl text-base font-bold text-para1 bg-white hover:bg-lime-100 transition duration-300 ease-in-out">
+                  <i class="fa-solid fa-arrow-right mr-2"></i>
+                  About Us
+                </button>
+                <h1 class="text-4xl font-bold leading-10 text-headingColor mb-6">We design thoughtful, liveable spaces</h1>
+                <p class="text-base font-medium leading-6 text-para1 mb-6">The living room, filled with soft light from large windows, <br> is where we gather with loved ones, sharing laughter and stories.</p>
+               </section>
+              <!-- about title markup end -->
                 
                 <div class="bg-white shadow-lg rounded-lg mb-4">
                   <div class="flex">
@@ -135,36 +138,128 @@
                 </div>
 
             </div>
-            <div class="flex-1">
+            <div>
               <img src="assetes/images/Rectangle.png " class="mb-0" alt="">
             </div>
            </section>
              <!-- member section markup start -->
              <section class="member-section bg-gray-100 py-16 mt-0">
-                        <div class="member-content  grid grid-cols-4 bg-white w-11/12 mx-auto px-10 py-6 rounded-xl ">
+                        <div class="member-content  grid lg:grid-cols-4 grid-cols-1 gap-10 bg-white w-11/12 mx-auto px-10 py-6 rounded-xl ">
                           <div class="client-feedback text-center">
                             <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
                             <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
                             <p class="text-base font-medium text-para2">Happy Client Review</p>
                           </div>
                           <div class="client-feedback text-center">
-                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <i class="fa-regular fa-file-lines text-3xl text-para2"></i>
                             <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
-                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                            <p class="text-base font-medium text-para2">Work Departments</p>
                           </div>
                           <div class="client-feedback text-center">
-                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <i class="fa-solid fa-users text-3xl text-para2"></i>
                             <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
-                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                            <p class="text-base font-medium text-para2">Our Happy Client</p>
                           </div>
                           <div class="client-feedback text-center">
-                            <i class="fa-regular fa-comment-dots text-3xl text-para2"></i>
+                            <i class="fa-solid fa-user-group text-3xl text-para2"></i>
                             <h1 class="text-4xl font-extrabold text-headingColor my-2">235+</h1>
-                            <p class="text-base font-medium text-para2">Happy Client Review</p>
+                            <p class="text-base font-medium text-para2">Staff Members</p>
                           </div>
                         </div>
               </section>
              <!-- member section markup  end -->
+                        <!-- my section -->
+           <section class="my-section container mx-auto bg-gray-100 p-10 ">
+            <!-- my section title markup start -->
+             <section class="my-section-title text-center">
+             <h1 class="lg:text-4xl text-3xl font-extrabold text-headingColor">Visit Our Other Sites</h1>
+             <p class="lg:text-base text-sm font-medium text-para1 my-6">Our beautiful house is more than just a place to live—it's a sanctuary where memories are made, <br>  and comfort is always found. From the moment we step through the door, we’re welcomed by the <br> warmth of spaces carefully designed to reflect who we are.</p>
+            </section>
+            <!-- my section title markup end -->
+             <!-- my section content start -->
+            <section class="my-content-section grid lg:grid-cols-3 grid-cols-1 gap-4 mx-auto">
+            <div class="relative bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
+              <!-- Image -->
+              <img src="assetes/images/house1.jpg" alt="Card Image" class="w-full h-full object-cover">
+          
+              <!-- Title over Image -->
+              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
+                <h2 class="text-lg font-semibold text-para2 mb-2" >Royal Mansion</h2>
+                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
+                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
+              <!-- Image -->
+              <img src="assetes/images/house2.jpg" alt="Card Image" class="w-full h-full object-cover">
+          
+              <!-- Title over Image -->
+              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
+                <h2 class="text-lg font-semibold text-para2 mb-2" >Signature House</h2>
+                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
+                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
+              <!-- Image -->
+              <img src="assetes/images/house3.jpg" alt="Card Image" class="w-full h-full object-cover">
+          
+              <!-- Title over Image -->
+              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
+                <h2 class="text-lg font-semibold text-para2 mb-2" >Luminous Manor</h2>
+                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
+                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
+              <!-- Image -->
+              <img src="assetes/images/house4.jpg" alt="Card Image" class="w-full h-full object-cover">
+          
+              <!-- Title over Image -->
+              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
+                <h2 class="text-lg font-semibold text-para2 mb-2" >Paradise Villa</h2>
+                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
+                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
+              <!-- Image -->
+              <img src="assetes/images/house5.jpg" alt="Card Image" class="w-full h-full object-cover">
+          
+              <!-- Title over Image -->
+              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
+                <h2 class="text-lg font-semibold text-para2 mb-2" >Golden Harmony</h2>
+                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
+                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300 ">
+              <!-- Image -->
+              <img src="assetes/images/house6.jpg" alt="Card Image" class="w-full h-full object-cover">
+          
+              <!-- Title over Image -->
+              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2 ">
+                <h2 class="text-lg font-semibold text-para2 mb-2" >Diamond Regency</h2>
+                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
+                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                  Read More
+                </button>
+              </div>
+            </div>
+          </section>
+             <!-- my section content end -->
+           </section>
+          <!-- my section -->
           <!-- about us section markup end -->
            <!-- process section markup start -->
            <section class="process-section bg-gray-100 my-0 ">
@@ -173,33 +268,33 @@
                 <i class="fa-solid fa-arrow-right mr-3"></i>
                 How we works
               </button>
-              <h1 class="text-4xl font-bold text-headingColor">Our Works Process</h1>
-              <p class="text-base font-medium text-prar1 my-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+              <h1 class="lg:text-4xl text-3xl font-bold text-headingColor">Our Works Process</h1>
+              <p class="text-base font-medium text-prar1 my-6 mx-12">Our house is not just bricks and walls—it’s the embodiment of our dreams, a place where every detail <br> tells a story of who we are and the love we’ve poured into it.</p>
             </div>
             <!-- process content -->
-            <div class="process-content grid grid-cols-4">
-              <div class="max-w-[275px] mx-auto shadow-lg rounded-lg p-4 bg-pink-200">
+            <div class="process-content grid lg:grid-cols-4 grid-cols-1 p-10 gap-10">
+              <div class="lg:max-w-[275px] lg:mx-auto mx-10 shadow-lg rounded-lg p-4 bg-pink-200">
                 <img src="assetes/images/concept.png" alt="Card Image">
                 <div>
                   <h1 class="font-extrabold text-xl my-2">Concept</h1>
                   <p class="text-base font-medium text-para1">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
               </div>            
-              <div class="max-w-[275px] mx-auto shadow-lg rounded-lg p-4 bg-yellow-200">
+              <div class="lg:max-w-[275px] lg:mx-auto mx-10 shadow-lg rounded-lg p-4 bg-yellow-200">
                 <img src="assetes/images/flow-chart.png" alt="Card Image">
                 <div>
                   <h1 class="font-extrabold text-xl my-2">Design Process</h1>
                   <p class="text-base font-medium text-para1">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
               </div>            
-              <div class="max-w-[275px] mx-auto bg-green-200 shadow-lg rounded-lg p-4">
+              <div class="lg:max-w-[275px] lg:mx-auto mx-10 bg-green-200 shadow-lg rounded-lg p-4">
                 <img src="assetes/images/vision.png" alt="Card Image">
                 <div>
                   <h1 class="font-extrabold text-xl my-2">Supervision</h1>
                   <p class="text-base font-medium text-para1">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
               </div>           
-               <div class="max-w-[275px] mx-auto bg-blue-200 shadow-lg rounded-lg p-4">
+               <div class="lg:max-w-[275px] lg:mx-auto mx-10 bg-blue-200 shadow-lg rounded-lg p-4">
                 <img src="assetes/images/budget-planning.png" alt="Card Image">
                 <div>
                   <h1 class="font-extrabold text-xl my-2">Budget Planning</h1>
@@ -209,18 +304,34 @@
             </div>
            </section>
            <!-- process section markup end -->
+            <!-- article section markup start -->
+             <section class="article-section mx-auto my-24 container">
+              <!-- article tile  -->
+               <div class="article-title text-center">
+                <button class=" py-1 px-6 gap-2 bg-lime-100 rounded-3xl mb-3  text-base font-bold text-para1 hover:bg-lime-300 transition duration-300 ease-in-out">
+                  <i class="fa-solid fa-arrow-right mr-3"></i>
+                  Explore our Latest works
+                </button>
+                <h1 class="lg:text-4xl text-3xl font-bold text-headingColor">Our Latest Portfolio</h1>
+                <p class="lg:text-base text-sm font-medium text-para1 my-6 px-10">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+               </div>
+               <!-- article content -->
+                <div class="article-content flex">
+            </div>
+              
+             </section>
+            <!-- article section markup end -->
             <!-- article and news section markup start -->
              <section class="article-section bg-gray-50 pt-16">
-              <div class="article-title text-center">
+              <div class="article-title text-center px-20">
                 <button class=" py-1 px-6 gap-2 bg-lime-100 rounded-3xl mb-3  text-base font-bold text-para1 hover:bg-lime-300 transition duration-300 ease-in-out">
                   <i class="fa-solid fa-arrow-right mr-3"></i>
                   Rinterio News
                 </button>
-                <h1 class="text-4xl font-bold text-headingColor">Read Our Articles and News</h1>
-                <p class="text-base font-medium text-para1 my-6">The barn house captivates with its blend of rustic charm and modern sophistication, 
-                  <br> featuring weathered wood, sleek metal accents.</p>
+                <h1 class="lg:text-4xl text-3xl font-bold text-headingColor">Read Our Articles and News</h1>
+                <p class="lg:text-base text-sm font-medium text-para1 my-6">The living room, filled with soft light from large windows, is where we gather with loved <br> ones, sharing laughter and stories. </p>
               </div>
-              <div class="article-card grid grid-cols-3">
+              <div class="article-card grid lg:grid-cols-3 grid-cols-1 gap-5">
                 <div class="max-w-[350px] mx-auto bg-white shadow-lg rounded-lg p-6">
                   <img class="w-full h-48 " src="assetes/images/article1.png" alt="Card Image">
                   <!-- card detiles start -->
@@ -284,25 +395,29 @@
             <!-- article and news section markup end -->
              <!-- discuss section markup start -->
               <section class="discuss-section bg-[url('assetes/images/bg.jpg')] bg-cover bg-center mt-16 pb-20">
-                <div class="discuss-title text-center pt-5">
+                <div class="discuss-title text-center pt-5 px-14">
                   <button class=" py-1 px-6 gap-2 bg-lime-100 rounded-3xl mb-3 text-base font-bold text-para1 hover:bg-lime-300 transition duration-300 ease-in-out">
                     <i class="fa-solid fa-arrow-right mr-3"></i>
                     Let’s Connect
                   </button>
-                  <h1 class="text-4xl font-bold text-headignColor">Let’s Discuss Next Project</h1>
-                  <p class="text-base font-medium text-para1 py-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+                  <h1 class="lg:text-4xl text-3xl font-bold text-headignColor">Let’s Discuss Next Project</h1>
+                  <p class="lg:text-base text-sm font-medium text-para1 py-6">The barn house captivates with its blend of rustic charm and modern sophistication, <br>
                      featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <div class="discuss-content grid grid-cols-2 px-40 gap-5">
-                  <input class="border px-6 py-3 rounded-3xl outline-none" type="text" placeholder="First Name*">
-                  <input class="border px-6 py-3 rounded-3xl outline-none" type="text" placeholder="Last Name*">
-                  <input class="border px-6 py-3 rounded-3xl outline-none" type="number" placeholder="Phone Number*">
-                  <input class="border px-6 py-3 rounded-3xl outline-none" type="email" placeholder="Email*">
-                  <textarea name="" id="" placeholder="Write your message here" rows="6" class="border col-span-2 rounded-3xl outline-none px-6 py-3 "></textarea>
-                  <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300 col-span-2 transition duration-300 ease-in-out">
-                    <button>Send Mail</button> 
-                    <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  </a>
+                <div class="discuss-content mx-auto w-9/12 grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-4">
+                    <input type="text" placeholder="First Name*" class="px-10 py-4 border outline-none rounded-full">
+                    <input type="text" placeholder="Last Name*" class="px-10 py-4 border outline-none rounded-full">
+                    <input type="password" placeholder="Password*" class="px-10 py-4 border outline-none rounded-full">
+                    <input type="email" placeholder="email*" class="px-10 py-4 border outline-none rounded-full">
+                    
+                  </div>
+                  <div class="area  mx-auto w-9/12 grid grid-cols-1 my-5">
+                    <textarea name="" id="" placeholder=" Write Your Text Here" rows="5" class="outline-none col-span-2 rounded-3xl px-8 py-2"></textarea>
+                    <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold rounded-3xl hover:bg-lime-300 transition duration-300 ease-in-out mt-5">
+                      <button>Send Mail</button> 
+                      <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
+                    </a>
+                  </div>
                 </div>
               </section>
              <!-- discuss section markup end -->
@@ -315,114 +430,24 @@
               <i class="fa-solid fa-arrow-right text-black bg-lime-300 h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
               Rinterio
             </button>
-            <p class="text-base font-medium text-para2">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
-            <div class="navbar-center my-6">
-              <ul class="menu menu-horizontal px-1">
-                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Home</a></li>
-                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Services</a></li>
-                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Portfolio</a></li>
-                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Blogs</a></li>
-                <li class="text-slate-200 text-base font-normal leading-5 hover:text-para1"><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <a class="items-center justify-center bg-lime-400 btn text-xl font-extrabold leading-7 rounded-3xl hover:bg-lime-300">
+            <p class=" lg:text-base text-sm px-10 font-medium text-para2">A beautiful house is more than just a structure; it's a reflection of comfort, style, <br> and personality. From the exterior design that greets you with its welcoming façade, to the cozy interiors <br> that offer warmth and functionality, every detail matters.</p>
+            <nav class="p-4 text-center">
+              <div class="container mx-auto my-5">
+                <ul class="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0 text-gray-300 justify-center">
+                  <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                  <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                  <li><a href="#" class="hover:text-gray-400">Portfolio</a></li>
+                  <li><a href="#" class="hover:text-gray-400">Blogs</a></li>
+                  <li><a href="#" class="hover:text-gray-400">Contact Us</a></li>
+                </ul>
+              </div>
+            </nav>
+            <a class="items-center justify-center bg-lime-400 btn lg:text-xl text-lg px-10 font-extrabold rounded-3xl hover:bg-lime-300">
               <button>Book Consult</button> 
               <i class="fa-solid fa-arrow-right text-white bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
             </a>
           </section>
          </footer>
-          <!-- my section -->
-           <section class="my-section container mx-auto bg-gray-100 p-10 ">
-            <!-- my section title markup start -->
-             <section class="my-section-title text-center">
-             <h1 class="text-4xl font-extrabold text-headingColor">Visit Our Other Sites</h1>
-             <p class="text-base font-medium text-para1 my-6">Our beautiful house is more than just a place to live—it's a sanctuary where memories are made, <br>  and comfort is always found. From the moment we step through the door, we’re welcomed by the <br> warmth of spaces carefully designed to reflect who we are.</p>
-            </section>
-            <!-- my section title markup end -->
-             <!-- my section content start -->
-            <section class="my-content-section grid grid-cols-3 gap-4 ">
-            <div class="relative w-96 h-80 bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
-              <!-- Image -->
-              <img src="assetes/images/house1.jpg" alt="Card Image" class="w-full h-full object-cover">
-          
-              <!-- Title over Image -->
-              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
-                <h2 class="text-lg font-semibold text-para2 mb-2" >Royal Mansion</h2>
-                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
-                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div class="relative w-96 h-80 bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
-              <!-- Image -->
-              <img src="assetes/images/house2.jpg" alt="Card Image" class="w-full h-full object-cover">
-          
-              <!-- Title over Image -->
-              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
-                <h2 class="text-lg font-semibold text-para2 mb-2" >Signature House</h2>
-                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
-                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div class="relative w-96 h-80 bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
-              <!-- Image -->
-              <img src="assetes/images/house3.jpg" alt="Card Image" class="w-full h-full object-cover">
-          
-              <!-- Title over Image -->
-              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
-                <h2 class="text-lg font-semibold text-para2 mb-2" >Luminous Manor</h2>
-                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
-                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div class="relative w-96 h-80 bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
-              <!-- Image -->
-              <img src="assetes/images/house4.jpg" alt="Card Image" class="w-full h-full object-cover">
-          
-              <!-- Title over Image -->
-              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
-                <h2 class="text-lg font-semibold text-para2 mb-2" >Paradise Villa</h2>
-                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
-                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div class="relative w-96 h-80 bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300">
-              <!-- Image -->
-              <img src="assetes/images/house5.jpg" alt="Card Image" class="w-full h-full object-cover">
-          
-              <!-- Title over Image -->
-              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2">
-                <h2 class="text-lg font-semibold text-para2 mb-2" >Golden Harmony</h2>
-                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
-                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div class="relative w-96 h-80 bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-110 transition-all duration-300 ">
-              <!-- Image -->
-              <img src="assetes/images/house6.jpg" alt="Card Image" class="w-full h-full object-cover">
-          
-              <!-- Title over Image -->
-              <div class="absolute bottom-0 left-0 bg-black w-full text-white pl-2 ">
-                <h2 class="text-lg font-semibold text-para2 mb-2" >Diamond Regency</h2>
-                <button class=" bg-lime-600 font-bold text-slate-50 text-xl flex gap-2 mb-4 rounded-md px-3 py-1 items-center justify-center">
-                  <i class="fa-solid fa-arrow-right text-slate-50 bg-black h-7 w-7 flex items-center justify-center rounded-full -rotate-45 text-base"></i>
-                  Read More
-                </button>
-              </div>
-            </div>
-          </section>
-             <!-- my section content end -->
-           </section>
-          <!-- my section -->
         <!-- footer section markup  end -->
         <!-- github repository link -->
          <a href="https://github.com/HridoyMnd/my-assignment-3"><button class="btn"> git repo link</button></a>
